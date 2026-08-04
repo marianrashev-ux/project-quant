@@ -1,4 +1,4 @@
-from currency import CurrencyPair
+from src.currency import CurrencyPair
 
 class FXForward:
     def __init__(
@@ -32,12 +32,3 @@ class FXForward:
             / (1 + self.foreign_rate * self.maturity)
         )
         return forward_price
-eurusd = CurrencyPair("EUR", "USD")
-forward = FXForward(
-    pair=eurusd,
-    spot=1.1735,
-    domestic_rate=0.042,
-    foreign_rate=0.021,
-    maturity=0.5,
-)
-print(forward.price())
