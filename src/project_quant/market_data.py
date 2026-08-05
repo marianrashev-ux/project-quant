@@ -1,4 +1,4 @@
-from currency import CurrencyPair
+from project_quant.currency import CurrencyPair
 
 class MarketData:
     def __init__(

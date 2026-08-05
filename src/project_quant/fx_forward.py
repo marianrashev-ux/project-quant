@@ -1,4 +1,4 @@
-from src.currency import CurrencyPair
+from project_quant.currency import CurrencyPair
 
 class FXForward:
     def __init__(
