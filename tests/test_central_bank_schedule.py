@@ -1,8 +1,5 @@
 from datetime import date
-
-from project_quant.central_bank_schedule import (
-    CentralBankSchedule,
-)
+from project_quant.central_bank_schedule import (CentralBankSchedule)
 
 
 def test_number_of_meetings():
